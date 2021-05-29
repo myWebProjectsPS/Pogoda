@@ -32,7 +32,6 @@ export class CharactersComponent implements OnInit {
     this.http.getUV().then(data => {
       this.setVariables(data);
     }).catch(err => {
-      //console.log(err)
     })
   }
 
@@ -40,7 +39,6 @@ export class CharactersComponent implements OnInit {
     this.http.getUvCurrent().then(data => {
       this.UvCurrent = data;
     }).catch(err => {
-      //console.log(err)
     })
   }
 
